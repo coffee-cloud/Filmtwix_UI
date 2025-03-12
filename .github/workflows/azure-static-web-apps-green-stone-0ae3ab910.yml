@@ -43,7 +43,6 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           app_location: "dist"                # Point to the pre-built dist folder
-          api_location: ""                    # No API path
           output_location: "."                # No separate output folder needed
           github_id_token: ${{ steps.idtoken.outputs.result }}
           skip_app_build: true                # Skip build since files are already built
